@@ -35,23 +35,7 @@
 <body>
 <h1>Cedar Line Studios — Privacy Policy</h1>
 <p><strong>Effective date:</strong> July 6th, 2026
-<strong>Last updated:</strong> July 6th, 2026</p>
-<!--
-MAINTAINER NOTES (not rendered in published HTML):
-- Part A applies to every app. Part B holds per-app practices.
-- To add a new app: (1) add its name to A §2, (2) add a Part B section
-  describing anything beyond Part A (extra SDKs, permissions, data types),
-  (3) make sure the App Store privacy "nutrition label" matches BOTH parts —
-  a label that understates collection is an FTC deception risk and an App
-  Review rejection risk.
-- Before adding ads, in-app purchases, accounts, or any new SDK to any app:
-  update this policy FIRST, bump "Last updated", and re-check the App Store
-  privacy label. Ad SDKs in particular add tracking/IDFA obligations (Apple
-  ATT prompt) and COPPA exposure — see A §7 and §12.
-- Unreleased apps: keep their sections commented out until launch so the
-  public policy does not leak the roadmap.
--->
-
+<strong>Last updated:</strong> August 15th, 2026</p>
 <hr>
 <h2>Part A — Applies to all Cedar Line Studios apps</h2>
 <h3>1. Who we are</h3>
@@ -102,6 +86,7 @@ When the App crashes or encounters an error, Crashlytics collects:</p>
 <li>Crash stack traces and error reports</li>
 <li>Device state and technical information at the time of the error (e.g., device
 model, OS version, available memory)</li>
+<li>The in-app screen or component where the error occurred</li>
 <li>A random installation identifier</li>
 </ul>
 <h4>3.3 Data stored on your device</h4>
@@ -111,16 +96,18 @@ through a service described below, and we cannot access it.</p>
 <h4>3.4 Game Center and iCloud (apps that use them — see Part B)</h4>
 <p>For Apps that integrate <strong>Apple Game Center</strong>, we use it for leaderboards,
 achievements, and saved game data. Game Center may process your Game Center
-player identifier, alias/nickname, avatar, scores, and friend relationships.
-Leaderboards may display the public aliases and avatars of other players. Saved
-game data may be synced to your personal <strong>iCloud</strong> account via Apple CloudKit;
+player identifier, alias/nickname, scores, and friend relationships (used only
+for friends-only leaderboard views). Our leaderboard screens display the public
+aliases and scores of other players; the Apps do not access or display Game
+Center profile photos. Saved game data may be synced to your personal
+<strong>iCloud</strong> account through Apple&#39;s Game Center saved-games feature;
 that data lives in your Apple account, not on Cedar Line Studios servers. Game
 Center and iCloud are operated by Apple and governed by
 <a href="https://www.apple.com/legal/privacy/">Apple&#39;s Privacy Policy</a>. You can manage
 Game Center (including your alias and who can see your profile) and iCloud in
 your device Settings.</p>
 <h4>3.5 When you contact us</h4>
-<p>The Apps include a &quot;Contact us&quot; option that opens your own email app; nothing
+<p>Some Apps include a &quot;Contact us&quot; option that opens your own email app; nothing
 is sent unless you choose to send it. If you email us, we receive your email
 address, anything you include in the message, and any information your email
 provider attaches. We use this information only to respond to you and to
@@ -190,6 +177,10 @@ to it until updated.</p>
 </tbody></table>
 <p>App-specific providers are listed in <strong>Part B</strong>.</p>
 <h3>6. International data transfers</h3>
+<p>The Apps are operated from the United States and are currently distributed
+only on the United States App Store. If you use the Apps from another country,
+you understand that your data is processed in the United States, where privacy
+laws may differ from those of your country.</p>
 <p>Cedar Line Studios is based in the United States, and the service providers
 above process data on servers that may be located in the United States or other
 countries. Where data is transferred out of the European Economic Area, the
@@ -215,9 +206,12 @@ than reasonably necessary for the purposes described in this policy.</p>
 <h3>8. Your choices and controls</h3>
 <p>Regardless of where you live, you can:</p>
 <ul>
-<li><strong>Limit analytics and crash reporting</strong> through your device&#39;s privacy
-settings (Settings → Privacy &amp; Security → Analytics &amp; Improvements, and
-per-app settings where offered).</li>
+<li><strong>Stop all collection by an App</strong> at any time by deleting it. Deleting an
+App stops its analytics and crash reporting and resets its random
+app-instance identifier. (Your device&#39;s Analytics &amp; Improvements settings
+control the separate diagnostics Apple shares with developers; the Apps do
+not currently offer an in-app switch for the Firebase analytics described
+in §3.)</li>
 <li><strong>Manage Game Center</strong> (alias, avatar, visibility) and <strong>iCloud</strong> data in
 your device Settings and at <a href="https://privacy.apple.com">privacy.apple.com</a>.</li>
 <li><strong>Deny or revoke device permissions</strong> (such as location, where an App
@@ -261,7 +255,14 @@ them for the purposes in §4, share them only with the processors in §5, retain
 them as described in §7, and do <strong>not</strong> sell them or share them for
 cross-context behavioral advertising. We do not collect sensitive personal
 information. California residents may exercise the rights in §9, including
-through an authorized agent.</p>
+through an authorized agent. Cedar Line Studios does not currently meet the
+revenue or data-volume thresholds that make a company a covered &quot;business&quot;
+under the CCPA/CPRA; we provide these disclosures and honor the rights in §9
+voluntarily.</p>
+<p><strong>Do Not Track:</strong> we do not track users over time and across third-party
+websites or apps, so the Apps do not respond to &quot;Do Not Track&quot; signals, and
+no third party collects personal information about your activities over time
+and across different websites or apps through the Apps.</p>
 <h3>11. Security</h3>
 <p>We rely on the platform security of iOS and on the security programs of Apple
 and Google for data in transit and at rest, and we limit the data we collect in
@@ -277,7 +278,10 @@ personal information from children under 13, and we do not use verifiable
 parental consent mechanisms because the Apps are not intended for children. If
 you are a parent or guardian and believe a child has used the Apps or provided
 us personal information (for example, by emailing us), contact
-<strong><a href="mailto:contact@cedarlinestudios.com">contact@cedarlinestudios.com</a></strong> and we will delete it promptly.</p>
+<strong><a href="mailto:contact@cedarlinestudios.com">contact@cedarlinestudios.com</a></strong> and we will delete it promptly. If we ever
+direct an App to children, we will comply with the Children&#39;s Online Privacy
+Protection Act (COPPA), including its notice and parental consent
+requirements, before that App launches.</p>
 <h3>13. If we add ads, purchases, or accounts in the future</h3>
 <p>Today the Apps contain no third-party advertising, no in-app purchases, and no
 accounts. If we add any of these to an App, we will update this policy and the
@@ -301,12 +305,6 @@ Part A. Apple is an independent controller of Game Center and iCloud data, and
 of App Store data.</p>
 <hr>
 <h2>Part B — App-specific data practices</h2>
-<!--
-MAINTAINER NOTE: one section per shipped app. Only describe deltas from
-Part A. Uncomment an app's section when it ships; keep unreleased apps
-commented out.
--->
-
 <h3>Ice Ray</h3>
 <ul>
 <li>Uses <strong>Apple Game Center</strong> for global and daily leaderboards and <strong>iCloud</strong>
@@ -317,6 +315,10 @@ for saved game data (see A §3.4).</li>
 <ul>
 <li>Uses <strong>Apple Game Center</strong> for leaderboards and <strong>iCloud</strong> for saved game
 data (see A §3.4).</li>
+<li>Swiper lets you name your save files. The save-file name you type is
+included in the analytics events described in A §3.1. Save-file names are
+free-text, so do not enter personal information (such as your real name)
+into them; if you do, it may be included in analytics.</li>
 <li>No location data. No additional processors beyond Part A.</li>
 </ul>
 <h3>MealMap</h3>
@@ -364,9 +366,10 @@ included in analytics. You can delete any content you have entered at any time
 <p>MealMap is a food and venue logging tool. We do not ask for, and the App is not
 designed to collect, health information — such as medical conditions, allergy
 profiles, or dietary restrictions — and we do not use your logged meals to
-infer anything about your health. Your meal log lives on your device and in
-your private iCloud account; the only meal-related data that reaches our
-analytics is what is described above.</p>
+infer anything about your health, diet, or nutrition. We do not sell meal
+data, and we do not share it with anyone except as described above. Your meal
+log lives on your device and in your private iCloud account; the only
+meal-related data that reaches our analytics is what is described above.</p>
 <h4>Your saved content and iCloud sync</h4>
 <p>MealMap stores the content you create — including venue names and addresses,
 dishes, the names of people you log meals for, ratings, and free-text notes —
@@ -379,9 +382,9 @@ is governed by
 <a href="https://www.apple.com/legal/privacy/">Apple&#39;s Privacy Policy</a>. You can delete
 this data by deleting it in the App or by managing your iCloud storage in your
 device Settings.</p>
-<p>MealMap provides an in-app <strong>Delete All Data</strong> option (in Settings) that erases
-your saved venues, dishes, people, ratings, and notes from your device and your
-iCloud database.</p>
+<p>MealMap provides an in-app <strong>Reset all data</strong> option (in Settings) that erases
+your saved venues, dishes, people, ratings, and notes from your device and,
+once iCloud sync completes, from your iCloud database.</p>
 <h4>MealMap processors</h4>
 <table>
 <thead>
@@ -402,20 +405,6 @@ iCloud database.</p>
 <td><a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></td>
 </tr>
 </tbody></table>
-<!--
-### DreamScapes (unreleased — uncomment and verify at launch)
-
-- Uses **Apple Game Center** for leaderboards and **iCloud** for saved game
-  data (see A §3.4).
-- No location data. No additional processors beyond Part A.
-
-### Nabulon Collection (unreleased — uncomment and verify at launch)
-
-- Uses **Apple Game Center** and **iCloud** for progress/saved data
-  (see A §3.4).
-- Reading/story progress is stored on your device. No location data. No
-  additional processors beyond Part A.
--->
 
   <footer>© 2026 Cedar Line Studios LLC</footer>
 </body>
