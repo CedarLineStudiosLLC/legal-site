@@ -54,8 +54,6 @@ account — not on our servers.</p>
 <h3>2. Apps covered by this policy</h3>
 <ul>
 <li>Ice Ray</li>
-<li>Swiper</li>
-<li>MealMap</li>
 </ul>
 <p>App-specific data practices are described in <strong>Part B</strong>. If an App is not
 listed here, this policy does not yet apply to it.</p>
@@ -123,8 +121,7 @@ record-keeping, then delete them.</p>
 <li>Use the device advertising identifier (IDFA) or any third-party advertising
 SDK, or engage in &quot;tracking&quot; as defined by Apple&#39;s App Tracking Transparency
 framework</li>
-<li>Collect precise (GPS) location on our servers (see Part B for how MealMap
-handles location entirely on-device and in your own iCloud)</li>
+<li>Collect precise (GPS) location on our servers</li>
 </ul>
 <h3>4. How we use data, and our legal bases</h3>
 <p>We use the data described above:</p>
@@ -311,100 +308,6 @@ of App Store data.</p>
 for saved game data (see A §3.4).</li>
 <li>No location data. No additional processors beyond Part A.</li>
 </ul>
-<h3>Swiper</h3>
-<ul>
-<li>Uses <strong>Apple Game Center</strong> for leaderboards and <strong>iCloud</strong> for saved game
-data (see A §3.4).</li>
-<li>Swiper lets you name your save files. The save-file name you type is
-included in the analytics events described in A §3.1. Save-file names are
-free-text, so do not enter personal information (such as your real name)
-into them; if you do, it may be included in analytics.</li>
-<li>No location data. No additional processors beyond Part A.</li>
-</ul>
-<h3>MealMap</h3>
-<p>In addition to the data described in Part A, MealMap collects and processes:</p>
-<h4>Location data</h4>
-<p>MealMap uses your device&#39;s location to find and log nearby venues. With your
-permission, we access your <strong>precise location</strong> while you are using the App.
-Location is also stored as part of the venues you save (address, latitude, and
-longitude of the venue).</p>
-<p>Your precise (GPS) location is processed only on your device — for example, to
-sort venues by distance — and is synced solely to your private iCloud account
-as part of the venues you save. Cedar Line Studios does not transmit your
-precise location, or the latitude and longitude of your saved venues, to our
-own servers or to analytics. The only third party that receives location is
-Apple, through Maps/MapKit and iCloud (see below). Separately, as noted in
-Part A §3.1, Firebase Analytics infers an approximate, city-level location from
-your IP address; this is not your device&#39;s GPS location.</p>
-<p>You can grant or revoke location access at any time in your device Settings.
-Denying location access limits location-dependent features but does not prevent
-you from using the rest of the App.</p>
-<h4>Maps</h4>
-<p>MealMap displays maps and venue information using <strong>Apple Maps / MapKit</strong>. Your
-location and search context may be processed by the map provider to render maps
-and search results, subject to
-<a href="https://www.apple.com/legal/privacy/">Apple&#39;s Privacy Policy</a>.</p>
-<h4>Usage analytics specific to MealMap</h4>
-<p>In addition to the general analytics described in Part A §3.1, MealMap sends
-information about your activity to <strong>Google Firebase Analytics</strong> so we can
-understand how the App is used. This includes content you create, such as:</p>
-<ul>
-<li>That a venue was added, and the venue&#39;s name</li>
-<li>That a dish was added to a venue, and the dish&#39;s name</li>
-<li>Ratings you give to venues or dishes</li>
-</ul>
-<p>We do <strong>not</strong> send your location data — including venue addresses, latitude, or
-longitude — to analytics, and we do not send the names of people you log meals
-for or your free-text notes. Content sent to analytics is processed by Google
-and is subject to Google&#39;s privacy policy. We do not intend for analytics to
-contain personally identifiable information. Because fields such as venue and
-dish names are free-text and entered at your discretion, we ask that you not
-enter personal information into them; if you do, that information may be
-included in analytics. You can delete any content you have entered at any time
-(see &quot;Your saved content and iCloud sync&quot; below and Part A §9).</p>
-<h4>A note on meal data</h4>
-<p>MealMap is a food and venue logging tool. We do not ask for, and the App is not
-designed to collect, health information — such as medical conditions, allergy
-profiles, or dietary restrictions — and we do not use your logged meals to
-infer anything about your health, diet, or nutrition. We do not sell meal
-data, and we do not share it with anyone except as described above. Your meal
-log lives on your device and in your private iCloud account; the only
-meal-related data that reaches our analytics is what is described above.</p>
-<h4>Your saved content and iCloud sync</h4>
-<p>MealMap stores the content you create — including venue names and addresses,
-dishes, the names of people you log meals for, ratings, and free-text notes —
-on your device using Apple CoreData. This content is automatically backed up
-and synced to your <strong>personal iCloud account</strong> via Apple <strong>CloudKit</strong>.</p>
-<p>This data is stored in your private iCloud database, associated with your Apple
-ID. Apart from the content sent to analytics as described above, Cedar Line
-Studios cannot access the contents of your private iCloud database. iCloud data
-is governed by
-<a href="https://www.apple.com/legal/privacy/">Apple&#39;s Privacy Policy</a>. You can delete
-this data by deleting it in the App or by managing your iCloud storage in your
-device Settings.</p>
-<p>MealMap provides an in-app <strong>Reset all data</strong> option (in Settings) that erases
-your saved venues, dishes, people, ratings, and notes from your device and,
-once iCloud sync completes, from your iCloud database.</p>
-<h4>MealMap processors</h4>
-<table>
-<thead>
-<tr>
-<th>Provider</th>
-<th>Purpose</th>
-<th>Their policy</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Apple (MapKit, CloudKit, iCloud)</td>
-<td>Maps, storage, and sync</td>
-<td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td>
-</tr>
-<tr>
-<td>Google (Firebase Analytics)</td>
-<td>Usage analytics (venue/dish/ratings)</td>
-<td><a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></td>
-</tr>
-</tbody></table>
 
   <footer>© 2026 Cedar Line Studios LLC</footer>
 </body>
