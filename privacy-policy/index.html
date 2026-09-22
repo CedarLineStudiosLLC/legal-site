@@ -35,7 +35,7 @@
 <body>
 <h1>Cedar Line Studios — Privacy Policy</h1>
 <p><strong>Effective date:</strong> July 6th, 2026
-<strong>Last updated:</strong> August 15th, 2026</p>
+<strong>Last updated:</strong> September 21st, 2026</p>
 <hr>
 <h2>Part A — Applies to all Cedar Line Studios apps</h2>
 <h3>1. Who we are</h3>
@@ -78,14 +78,18 @@ We use this data only in aggregate to understand feature usage; we do not use
 it to identify you personally, to build advertising profiles, or to track you
 across other companies&#39; apps or websites.</p>
 <h4>3.2 Crash and diagnostic data</h4>
-<p>We use <strong>Google Firebase Crashlytics</strong> to detect and fix crashes and errors.
-When the App crashes or encounters an error, Crashlytics collects:</p>
+<p>We use <strong>Google Firebase Crashlytics</strong> and <strong>Sentry</strong> (Functional Software,
+Inc.) to detect and fix crashes and errors. When the App crashes or encounters
+an error, these tools collect:</p>
 <ul>
 <li>Crash stack traces and error reports</li>
 <li>Device state and technical information at the time of the error (e.g., device
-model, OS version, available memory)</li>
+model, OS version, available memory), and a short record of App activity
+leading up to the error</li>
 <li>The in-app screen or component where the error occurred</li>
 <li>A random installation identifier</li>
+<li>Your IP address, which the server that receives the crash report sees
+automatically</li>
 </ul>
 <h4>3.3 Data stored on your device</h4>
 <p>The Apps store data locally on your device (for example, game progress, scores,
@@ -167,6 +171,11 @@ to it until updated.</p>
 <td><a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></td>
 </tr>
 <tr>
+<td>Sentry (Functional Software, Inc.)</td>
+<td>Crash and error reporting</td>
+<td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td>
+</tr>
+<tr>
 <td>Apple (Game Center, iCloud, CloudKit)</td>
 <td>Leaderboards, saved games, sync</td>
 <td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td>
@@ -182,16 +191,17 @@ laws may differ from those of your country.</p>
 above process data on servers that may be located in the United States or other
 countries. Where data is transferred out of the European Economic Area, the
 United Kingdom, or Switzerland, our providers rely on recognized transfer
-mechanisms — Google LLC and Apple Inc. participate in the EU-U.S. Data Privacy
-Framework (and its UK and Swiss extensions) and/or use Standard Contractual
-Clauses.</p>
+mechanisms — Google LLC, Apple Inc., and Functional Software, Inc. (Sentry)
+participate in the EU-U.S. Data Privacy Framework (and its UK and Swiss
+extensions) and/or use Standard Contractual Clauses.</p>
 <h3>7. Data retention</h3>
 <ul>
 <li><strong>Analytics data:</strong> user-level analytics data (including the app-instance
 identifier) is retained by Firebase for a limited period (by default, up to
 14 months), after which only aggregate reporting data remains.</li>
 <li><strong>Crash data:</strong> Crashlytics retains crash reports for a limited period
-(currently 90 days by default).</li>
+(currently 90 days by default). Sentry retains crash and error data for a
+limited period (currently 30 days by default).</li>
 <li><strong>Support emails:</strong> kept only as long as needed (see §3.5).</li>
 <li><strong>Data on your device:</strong> persists until you delete the App or clear its data.</li>
 <li><strong>Data in your iCloud account:</strong> persists in your Apple account until you
